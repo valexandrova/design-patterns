@@ -15,10 +15,10 @@ public class User implements Observer {
 	public void update() {
 		// TODO Auto-generated method stub
 			if(product== null) {
-				System.out.println(this.getUserName() +" hasn't got product set");
+				System.out.println(getUserName() +" hasn't got product set");
 				return;
 			}
-			boolean lastAvailability = this.product.getUpdate();
+			boolean lastAvailability = product.getUpdate();
 			if(lastAvailability == true) 
 				System.out.println("Hello, " + getUserName() + "! Product is now available!");
 			else 
